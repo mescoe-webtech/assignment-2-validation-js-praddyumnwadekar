@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="admission.css">
+	  
+	<title>Admission Portal</title>
+	<script type="text/javascript">
+		
+		function validate(){
+			
+			var fname1 = document.forms["formvalidate"]["FName"].value;
+			var lname1 = document.forms["formvalidate"]["LName"].value;
+			var mb = document.forms["formvalidate"]["MobileNo"].value;
+			var email =  document.forms["formvalidate"]["Email"].value;
+
+			regName = /^[a-zA-Z ]+$/;
+			regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			regmb = /^[7-9][0-9]{9}$/;	
+			
+			if (!regName.test(fname1) || fname1 =="") {
+    			alert("Enter a valid First Name");
+ 				document.formvalidate.FName.focus();
+   				return false;
+  				}
+  			
+  			if (!regName.test(lname1) || lname1 =="") {
+    			alert("Enter a valid Last Name");
+ 				document.formvalidate.LName.focus();
+   				return false;
+  				}
+			
+			if(!regEmail.test(email) || email ==""){
+  				alert("You have entered an invalid email address!");
+				document.formvalidate.Email.focus();
+				return false;
+  			}
+
+			if (!regmb.test(mb) || mb =="") {
+    			alert("Enter a valid Mobile Number");
+ 				document.formvalidate.MobileNo.focus();
+   				return false;s
+  				}
+  			
+  		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navBar" align="right">
+				<span class="SIGN_UP"> <a class="active" href="admission.html">SIGN UP </a> </span>
+		</nav>
+	</header>
+	<main>	
+	  	<form   name="formvalidate" onsubmit="return validate()" action="submit.html">
+			<div class="H1"><h1 align="center">Welcome To Admission Portal</h1> </div>
+
+			<div class="marq"><marquee scrollamount=15><h2><span class="marquee">*Please fill the data 
+			carefully*</span></h2></marquee></div>
+			<div class="Form">
+				
+				<div class="name">
+					<div class="Fname" align="center"><b>FirstName :</b><br><input  type="text" name="FName" placeholder="ex: Tony"></div>
+					<div class="Lname" align="center"><b>LastName :</b><br><input  type="text" name="LName" placeholder="ex: Stark"></div>
+				</div>
+					
+					<div class="DOB" align="center"><b>Birth Date :</b><br><input type="date" name="" required></div>
+
+					<div class="Email" align="center"><b>Email :</b><br><input  type="Email" name="Email" placeholder="@gmail.com"></div>
+
+					<div class="MobileNo" align="center"><b>Mob :</b><br><input  type="text" name="MobileNo" maxlength="10" placeholder="Withoud contry code"></div>
+
+					<div class="Gender" align="center">
+						
+						<b>Gender :  </b><b class="Male"> Male</b><input type="radio" name="Gender" value="M" required><b class="Female" > Female</b>
+
+						<input type="radio" name="Gender" value="F" required></div>
+					
+					
+
+					<div class="address" align="center"><b class="AddresT" >Your Address :</b><br>
+						<div class="Address1"><input type="text" name="Address1" placeholder="Address" required></div>
+						<div class="Line"><input type="text" name="Line" placeholder="Line" required></div>
+						<div class="Pincode"><input type="text" name="Pincode" placeholder="Pincode" required></div>
+						<div class="City"><input type="text" name="City" placeholder="City" required></div>
+					</div>
+
+					<div class="buttons">
+						<div class="Submit" align="center"><span><input type="submit" name="Submit"></span></div>
+						<div class="Reset" align="center"><span><input type="reset" name="Reset"></span></div>
+
+					</div>	
+			</div>	
+		</form>				
+	</main>
+</body>
+</html>

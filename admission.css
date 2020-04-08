@@ -1,0 +1,241 @@
+.*{
+	color: black;
+}
+body{
+	background-image: url(form-background.jpg);
+	color: #ffffff;
+}
+
+
+a{
+	 color: #000;
+	 text-decoration:none;
+}
+
+a.active{
+	background-color: #4CAF50;
+  color: white;
+  padding:10px;
+}
+nav{
+	display: block;
+	position: fixed;
+
+	z-index: 1;
+}
+.Form{
+	position : absolute;
+	border-color: #37474F;
+	border-style: solid;
+	padding: 30px;
+	margin: 0px 360px;
+}
+
+.navBar{
+	top: 0px; 
+	display: block;
+	background-color: #f1f1f1;
+	right: 0;
+	padding: 10px;
+	width: 100%;
+	color: b
+}
+
+
+
+.HOME,.ABOUT,.PRODUCT,.CONTACT,.LOGIN,.SIGN_UP{
+	padding: 10px;
+}
+
+a:hover:not(.active) {
+
+	padding: 10px;
+  background-color: #555;
+  color: white;
+}
+h1{
+	margin-top: 40px;
+}
+.H1{
+	color:#4fc3f7;
+}
+.marquee{
+	color: black;
+	font-size: 30px;
+	font-style: normal;
+}
+.address,.Male,.Gender,.MobileNo,.Email,.Fname,.Lname,.DOB{
+	
+	text-align: left;
+	padding: 10px; 
+}
+.City,.Pincode,.Line,.Address1{
+
+	padding: 7px;
+}
+
+.Submit{
+	margin: 0 220px 0px 10px;
+	padding: 7px;
+}
+.Reset{
+
+	margin: -48px 60px 0px 220px;
+	padding: 7px;
+}
+input[type='text']{
+	margin-left:3px; 
+	padding: 10px;
+	margin-top: 4px;
+	text-shadow: none;
+	width: 500px;
+	box-shadow: transparent;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+}
+input[type='text']:focus{
+	padding: 10px; 
+	margin-top: 4px;
+	margin-left:3px;
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 500px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: rgb(122,225,225);
+	box-shadow: 2px 2px 2px 2px #f2ccff;
+
+}
+input[type='submit']{
+	background-color: #f4511e;
+	border: none;
+	opacity: 0.6;
+    transition: 0.3s;
+	padding:10px 40px;
+	border-radius: 10px;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+input[type='submit']:hover{
+	padding:10px 40px;
+	border-radius: 80px;
+	box-shadow: #f2ccff;
+	text-shadow: none;
+	opacity: 1.5;
+	box-shadow: none;
+}
+input[type='reset']{
+	background-color: #f4511e;
+	border: none;
+	opacity: 0.6;
+    transition: 0.3s;
+	padding:10px 40px;
+	border-radius: 10px;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+input[type='reset']:hover{
+	padding:10px 40px;
+	border-radius: 80px;
+	box-shadow: #f2ccff;
+	text-shadow: none;
+	opacity: 1.5;
+	box-shadow: none;
+}
+select{
+	margin-left:3px;
+	margin-top: 4px; 
+	padding: 10px; 
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 480px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+
+}
+select:focus{
+	margin-left:3px;
+	margin-top: 4px;
+	padding: 10px; 
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 480px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: rgb(122,225,225);
+	box-shadow: 2px 2px 2px 2px #f2ccff;
+}
+input[type='email'],input[type='date']{
+	margin-left:3px;
+	margin-top: 4px;
+	padding: 10px; 
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 500px;
+	border-top:none;
+	border-left: none;
+	border-right: none;	
+}
+input[type='date']:focus{
+	padding: 10px; 
+	margin-top: 4px;
+	margin-left:3px;
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 500px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: rgb(122,225,225);
+	box-shadow: 2px 2px 2px 2px #f2ccff;
+}
+input[type='email']:focus{
+	padding: 10px; 
+	margin-top: 4px;
+	margin-left:3px;
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 500px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: rgb(122,225,225);
+	box-shadow: 2px 2px 2px 2px #f2ccff;
+}
+input[type='radio']{
+	margin-left:3px;
+
+	padding: 20px; 
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 15px;
+	border-top:none;
+	border-left: none;
+	border-right: none;	
+}
+input[type='radio']:focus{
+	padding: 10px; 
+	border :5px solid #50;
+	transition: 0.11s;
+	text-shadow: none;
+	width: 15px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	
+	box-shadow:#f2ccff;
+}
+
